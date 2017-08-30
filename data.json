@@ -1,4 +1,5 @@
-var events =  [
+{
+ "events" :  [
     {
       "location": "San Francisco, CA",
       "date": "May 1",
@@ -14,4 +15,5 @@ var events =  [
       "date": "May 30",
       "map": "img/map-ny.png"
     }
-];
+  ]
+}

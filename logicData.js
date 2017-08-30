@@ -4,11 +4,11 @@
 	var xhr = new XMLHttpRequest(); // Creo el objeto XMLHttpRequest y lo guardo en xhr
 	xhr.onload = function() {
 		if(xhr.status == 200) {
-			responseObject = JSON.parse(xhr.responseText);
+			var responseObject = JSON.parse(xhr.responseText);
  
 			// Construimos una cadena con el nuevo contenido (También podemos hacerlo con DOM)
 			var newContent = '';
-			for (var i = 0; i < responseObject.events.lenght; i++) { // Recorre el objeto
+			for (var i = 0; i < responseObject.events.length; i++) { // Recorre el objeto
 				newContent += '<div class="event">';
 				newContent += '<img src="' + responseObject.events[i].map + '" ';
 				newContent += 'alt="' + responseObject.events[i].location + '" />';
